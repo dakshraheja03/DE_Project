@@ -7,6 +7,7 @@ const CategoryForm = ({ handleSubmit, value, setValue }) => {
         <div className="mb-3">
           <input
             type="text"
+            id="enternew"
             className="form-control"
             placeholder="Enter new category"
             value={value}
