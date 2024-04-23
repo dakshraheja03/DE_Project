@@ -13,7 +13,7 @@ const AdminOrders = () => {
     "Not Process",
     "Processing",
     "Shipped",
-    "deliverd",
+    "delivered",
     "cancel",
   ]);
   const [changeStatus, setCHangeStatus] = useState("");
@@ -72,6 +72,7 @@ const AdminOrders = () => {
                           bordered={false}
                           onChange={(value) => handleChange(o._id, value)}
                           defaultValue={o?.status}
+                          id="selectdelivery"
                         >
                           {status.map((s, i) => (
                             <Option key={i} value={s}>
