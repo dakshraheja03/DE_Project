@@ -22,6 +22,9 @@ const Register = () => {
   const handleBlur = () => {
     const isValid = validateEmail(email);
     setIsValidEmail(isValid);
+  };
+  
+  const handleBlur2=()=>{
     const isValid1 = validateNumber(phone);
     setIsValidNumber(isValid1);
   };
@@ -148,7 +151,7 @@ const Register = () => {
               className="form-control"
               id="phone1"
               placeholder="Enter Your Phone"
-              onBlur={handleBlur}
+              onBlur={handleBlur2}
               required
             />
             {!isValidNumber && (
