@@ -76,6 +76,7 @@ const CreateProduct = () => {
                 bordered={false}
                 placeholder="Select a category"
                 size="large"
+                id="category"
                 showSearch
                 className="form-select mb-3"
                 onChange={(value) => {
@@ -93,6 +94,7 @@ const CreateProduct = () => {
                   {photo ? photo.name : "Upload Photo"}
                   <input
                     type="file"
+                    id="photo"
                     name="photo"
                     accept="image/*"
                     onChange={(e) => setPhoto(e.target.files[0])}
@@ -117,6 +119,7 @@ const CreateProduct = () => {
                   type="text"
                   value={name}
                   placeholder="write a name"
+                  id="productname"
                   className="form-control"
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -125,6 +128,7 @@ const CreateProduct = () => {
                 <textarea
                   type="text"
                   value={description}
+                  id="productdescription"
                   placeholder="write a description"
                   className="form-control"
                   onChange={(e) => setDescription(e.target.value)}
@@ -135,6 +139,7 @@ const CreateProduct = () => {
                 <input
                   type="number"
                   value={price}
+                  id="productprice"
                   placeholder="write a Price"
                   className="form-control"
                   onChange={(e) => setPrice(e.target.value)}
@@ -145,6 +150,7 @@ const CreateProduct = () => {
                   type="number"
                   value={quantity}
                   placeholder="write a quantity"
+                  id="productquantity"
                   className="form-control"
                   onChange={(e) => setQuantity(e.target.value)}
                 />
@@ -154,6 +160,7 @@ const CreateProduct = () => {
                   bordered={false}
                   placeholder="Select Shipping "
                   size="large"
+                  id="productshipping"
                   showSearch
                   className="form-select mb-3"
                   onChange={(value) => {
@@ -165,7 +172,7 @@ const CreateProduct = () => {
                 </Select>
               </div>
               <div className="mb-3">
-                <button className="btn btn-primary" onClick={handleCreate}>
+                <button className="btn btn-primary" onClick={handleCreate} id="createProduct">
                   CREATE PRODUCT
                 </button>
               </div>

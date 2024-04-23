@@ -94,7 +94,7 @@ const Login = () => {
             />
             {!isValidPassword1 && <div style={{ color: 'red' }}>Please enter a valid password.</div>}
           </div>
-
+          <p>New here? <a style={{textDecoration:"none",color:"black",fontStyle:"italic"}} href="http://localhost:3000/register">Register</a></p>
           <button type="submit" className="btn btn-primary" id="submitloginbutton">
             LOGIN
           </button>
