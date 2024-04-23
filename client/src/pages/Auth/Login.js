@@ -75,7 +75,7 @@ const Login = () => {
               onBlur={handleBlur}
               onChange={(e) => setEmail(e.target.value)}
               className="form-control"
-              id="exampleInputEmail1"
+              id="email2"
               placeholder="Enter Your Email "
               required
             />
@@ -88,25 +88,14 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               onBlur={handleBlur1}
               className="form-control"
-              id="exampleInputPassword1"
+              id="password2"
               placeholder="Enter Your Password"
               required
             />
             {!isValidPassword1 && <div style={{ color: 'red' }}>Please enter a valid password.</div>}
           </div>
-          <div className="mb-3">
-            <button
-              type="button"
-              className="btn forgot-btn"
-              onClick={() => {
-                navigate("/forgot-password");
-              }}
-            >
-              Forgot Password
-            </button>
-          </div>
 
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary" id="submitloginbutton">
             LOGIN
           </button>
         </form>

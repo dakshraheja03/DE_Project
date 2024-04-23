@@ -91,7 +91,7 @@ const Register = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="form-control"
-              id="exampleInputEmail1"
+              id="name1"
               placeholder="Enter Your Name"
               required
               autoFocus
@@ -104,7 +104,7 @@ const Register = () => {
               onBlur={handleBlur}
               onChange={(e) => setEmail(e.target.value)}
               className="form-control"
-              id="exampleInputEmail1"
+              id="email1"
               placeholder="Enter Your Email "
               required
             />
@@ -117,7 +117,7 @@ const Register = () => {
               onBlur={handleBlur1}
               onChange={(e) => setPassword(e.target.value)}
               className="form-control"
-              id="exampleInputPassword1"
+              id="password1"
               placeholder="Enter Your Password"
               required
             />
@@ -130,7 +130,7 @@ const Register = () => {
               onChange={(e) => setConfirmPassword(e.target.value)}
               className="form-control"
               onBlur={handleBlurConfirmPassword}
-              id="exampleInputPassword1"
+              id="confirmpassword1"
               placeholder="Confirm Your Password"
               required
             />
@@ -146,7 +146,7 @@ const Register = () => {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               className="form-control"
-              id="exampleInputEmail1"
+              id="phone1"
               placeholder="Enter Your Phone"
               onBlur={handleBlur}
               required
@@ -163,12 +163,12 @@ const Register = () => {
               value={address}
               onChange={(e) => setAddress(e.target.value)}
               className="form-control"
-              id="exampleInputEmail1"
+              id="address1"
               placeholder="Enter Your Address"
               required
             />
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary" id="registerbuttonsubmit">
             REGISTER
           </button>
         </form>
