@@ -96,7 +96,7 @@ const CartPage = () => {
             </h1>
           </div>
         </div>
-        <div className="container ">
+        <div className="container">
           <div className="row ">
             <div className="col-md-7  p-0 m-0">
               {cart?.map((p) => (
@@ -108,6 +108,7 @@ const CartPage = () => {
                       alt={p.name}
                       width="100%"
                       height={"130px"}
+                      style={{objectFit:"cover",margin:"5px"}}
                     />
                   </div>
                   <div className="col-md-4">
@@ -126,7 +127,7 @@ const CartPage = () => {
                 </div>
               ))}
             </div>
-            <div className="col-md-5 cart-summary ">
+            <div className="col-md-5 cart-summary " style={{padding:"50px"}}>
               <h2>Cart Summary</h2>
               <p>Total | Checkout | Payment</p>
               <hr />
@@ -167,7 +168,7 @@ const CartPage = () => {
                   )}
                 </div>
               )}
-              <div className="mt-2">
+              <div className="mt-2 ml-5">
                 {!clientToken || !auth?.token || !cart?.length ? (
                   ""
                 ) : (

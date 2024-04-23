@@ -152,6 +152,7 @@ const HomePage = () => {
                   className="card-img-top"
                   alt={p.name}
                   onClick={() => navigate(`/product/${p.slug}`)}
+                  style={{padding:"15px"}}
                 />
                 <div className="card-body">
                   <div className="card-name-price">
