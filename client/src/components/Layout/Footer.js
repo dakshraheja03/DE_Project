@@ -8,7 +8,7 @@ const Footer = () => {
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <h6>Welcome to EShop!</h6>
+            <h6>Welcome to Shopify!</h6>
             <p class="text-justify">At EShop, we're passionate about bringing convenience, quality, and satisfaction to your online shopping experience. With a commitment to excellence and a focus on customer-centricity, we aim to be your go-to destination for all your shopping needs.</p>
           </div>
           <div class="col-xs-6 col-md-3" style={{marginLeft:"150px"}}>
@@ -26,7 +26,7 @@ const Footer = () => {
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017
+            <p class="copyright-text">Copyright &copy; 2024
             </p>
           </div>
         </div>
